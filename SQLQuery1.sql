@@ -45,3 +45,9 @@ select max (salary) as Maximum_Sallary from employee_payroll;
 select avg (salary) as Avarage_Sallary from employee_payroll;
 select count (salary) as Number_of_Employee from employee_payroll;
 select count (salary) as Number_of_Employee, gender  from employee_payroll  group by gender;
+
+------uc8 adding Phone, Address, Department as default values ----------------------------------
+ALTER TABLE employee_payroll ADD phone bigint;
+
+ALTER TABLE employee_payroll ADD Address varchar(200) default'pune';
+ALTER TABLE employee_payroll ADD Department varchar(200) not null default'HR';
