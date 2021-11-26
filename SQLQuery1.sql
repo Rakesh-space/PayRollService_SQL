@@ -31,3 +31,9 @@ select salary from employee_payroll where id=4;
 ----------------------uc6 add one row in table Gender ----------------------------------------------
 ALTER TABLE employee_payroll
 ADD gender varchar(20);
+
+-----------uc7 calculate sum, avg, min, max ,count and number of male female employee in table---------------
+ update employee_payroll set gender ='F' where name = 'shital' ;
+
+ select SUM(salary) as Basic_Pay FROM employee_payroll WHERE gender = 'F' GROUP BY gender;
+ select SUM(salary) as Basic_Pay FROM employee_payroll WHERE gender = 'M' GROUP BY gender;
