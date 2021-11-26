@@ -37,3 +37,11 @@ ADD gender varchar(20);
 
  select SUM(salary) as Basic_Pay FROM employee_payroll WHERE gender = 'F' GROUP BY gender;
  select SUM(salary) as Basic_Pay FROM employee_payroll WHERE gender = 'M' GROUP BY gender;
+
+ select * from employee_payroll;
+select sum (salary) as Total_Sallary from employee_payroll;
+select min (salary) as Minimum_Sallary from employee_payroll;
+select max (salary) as Maximum_Sallary from employee_payroll;
+select avg (salary) as Avarage_Sallary from employee_payroll;
+select count (salary) as Number_of_Employee from employee_payroll;
+select count (salary) as Number_of_Employee, gender  from employee_payroll  group by gender;
