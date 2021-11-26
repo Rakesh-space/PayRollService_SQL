@@ -27,3 +27,7 @@ select * from employee_payroll where name='Meena';
 select *from employee_payroll where startDate between CAST('2018-03-01 ' as date) and GETDATE();
 
 select salary from employee_payroll where id=4;
+
+----------------------uc6 add one row in table Gender ----------------------------------------------
+ALTER TABLE employee_payroll
+ADD gender varchar(20);
