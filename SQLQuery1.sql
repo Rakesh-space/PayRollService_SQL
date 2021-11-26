@@ -9,3 +9,7 @@ name varchar(200),
 salary float,
 startDate date
 );
+
+select * from employee_payroll;
+insert into employee_payroll values ('Rakesh',5000,'2019-03-01');
+
