@@ -57,3 +57,8 @@ ALTER TABLE employee_payroll ADD Department varchar(200) not null default'HR';
 
 ALTER TABLE employee_payroll ADD Deduction bigint, Taxable_pay float, IncomeTax_pay float,Net_Pay float;
 Exec sp_rename 'employee_payroll.salary','Basic_pay','COLUMN';
+
+
+-----------------uc10 search a particular employee in given table-------------------------------------
+
+select * from employee_payroll where name='shital';
