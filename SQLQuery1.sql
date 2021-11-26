@@ -11,5 +11,5 @@ startDate date
 );
 
 select * from employee_payroll;
-insert into employee_payroll values ('Rakesh',5000,'2019-03-01');
+insert into employee_payroll values ('Rakesh',5000,'2019-03-01'),('vishal',8000,'2019-07-11');
 
