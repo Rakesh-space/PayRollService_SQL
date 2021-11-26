@@ -51,3 +51,9 @@ ALTER TABLE employee_payroll ADD phone bigint;
 
 ALTER TABLE employee_payroll ADD Address varchar(200) default'pune';
 ALTER TABLE employee_payroll ADD Department varchar(200) not null default'HR';
+
+
+--------------uc9 Rename and adding diff columns--------------------------------------------------
+
+ALTER TABLE employee_payroll ADD Deduction bigint, Taxable_pay float, IncomeTax_pay float,Net_Pay float;
+Exec sp_rename 'employee_payroll.salary','Basic_pay','COLUMN';
